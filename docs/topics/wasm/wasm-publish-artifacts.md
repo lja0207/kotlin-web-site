@@ -1,7 +1,8 @@
 [//]: # (title: Publish artifacts)
 
 Kotlin/Wasm can generate artifacts to publish as a site on static hosting services. This tutorial
-demonstrates how to generate artifacts for a Compose Multiplatform app and publish them as a site on GitHub pages.
+demonstrates how to generate artifacts for a [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
+ app and publish them as a site on [GitHub pages](https://pages.github.com/).
 
 ## Before you start
 
@@ -20,17 +21,17 @@ demonstrates how to generate artifacts for a Compose Multiplatform app and publi
 1. Open the **Gradle** tool window: **View** | **Tool Windows** | **Gradle**.
 2. In the **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
 
-   ![Run the Gradle task](wasm-gradle-task-window.png){width=650}
+   ![Run the Gradle task](wasm-gradle-task-window-compose.png){width=650}
 
    Alternatively, you can run the following command in Terminal from the project directory:
 
    ```bash
    ./gradlew wasmJsBrowserDistribution -t
    ```
-   Once the application task completes, the generated artifacts are located in the `composeApp/build/dist/wasmJS/productionExecutable`
+   Once the application task completes, you can find the generated artifacts in the `composeApp/build/dist/wasmJS/productionExecutable`
    folder:
 
-   ![Run the Kotlin/Wasm application](wasm-app-run.png){width=650}
+   ![Artifacts directory](wasm-composeapp-directory.png){width=600}
 
 ## Publish artifacts
 
@@ -43,7 +44,11 @@ demonstrates how to generate artifacts for a Compose Multiplatform app and publi
 
 3. In a browser, navigate to your GitHub pages domain and click **Hello World!**.
 
-   ![Run the Kotlin/Wasm application](wasm-app-run.png){width=650}
+   ![Click hello world in browser](wasm-composeapp-browser-hello.png){width=650}
+
+   You see the Compose Multiplatform logo:
+   
+   ![Compose app in browser](wasm-composeapp-browser.png){width=650}
 
    Congratulations! You have published your artifacts on GitHub pages.
 
