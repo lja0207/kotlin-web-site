@@ -7,7 +7,7 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
 ## Before you start
 
 1. Download and install the latest version of [IntelliJ IDEA](https://www.jetbrains.com/idea/).
-2. Clone the [Kotlin/Wasm examples](https://github.com/Kotlin/kotlin-wasm-examples/tree/main) repository
+2. Clone the [Kotlin/Wasm examples](https://github.com/Kotlin/kotlin-wasm-examples/) repository
    by selecting **File** | **New** | **Project from Version Control** in IntelliJ IDEA.
 
    You can also clone it from the command line:
@@ -18,17 +18,18 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
 
 ## Generate artifacts
 
-1. Open the **Gradle** tool window: **View** | **Tool Windows** | **Gradle**.
-2. In the **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
+1. In IntelliJ IDEA, a **Gradle build scripts found** notification appears. Click **Load**.
+2. Open the **Gradle** tool window: **View** | **Tool Windows** | **Gradle**.
+3. In the **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
 
    ![Run the Gradle task](wasm-gradle-task-window-compose.png){width=650}
 
-   Alternatively, you can run the following command in Terminal from the project directory:
+   Alternatively, you can run the following command in Terminal from the `compose-example` directory:
 
    ```bash
-   ./gradlew wasmJsBrowserDistribution -t
+   ./gradlew wasmJsBrowserDistribution
    ```
-   Once the application task completes, you can find the generated artifacts in the `composeApp/build/dist/wasmJS/productionExecutable`
+   Once the application task completes, you can find the generated artifacts in the `composeApp/build/dist/wasmJs/productionExecutable`
    folder:
 
    ![Artifacts directory](wasm-composeapp-directory.png){width=600}
