@@ -16,7 +16,7 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
    git clone git@github.com:Kotlin/kotlin-wasm-examples.git
    ```
 
-## Run the application
+## Generate artifacts
 
 1. Open the **Gradle** tool window: **View** | **Tool Windows** | **Gradle**.
 2. In the **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
@@ -33,7 +33,7 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
 
    ![Artifacts directory](wasm-composeapp-directory.png){width=600}
 
-## Publish artifacts
+## Publish on GitHub pages
 
 1. Copy all the contents in your `productionExecutable` directory into the repository that you want to create a site from.
 2. Follow GitHub's instructions for [creating your site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
