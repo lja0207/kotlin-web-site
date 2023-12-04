@@ -1,6 +1,10 @@
 [//]: # (title: Publish artifacts)
 
-Kotlin/Wasm can generate artifacts to publish as a site on static hosting services. This tutorial
+> Kotlin/Wasm is an [Alpha](components-stability.md) feature. It may be dropped or changed at any time. It is available only starting with [Kotlin 1.8.20](releases.md).
+>
+{type="note"}
+
+With Kotlin/Wasm, you can generate artifacts to publish as a site on static hosting services. This tutorial
 demonstrates how to generate artifacts for a [Compose Multiplatform](https://www.jetbrains.com/lp/compose-multiplatform/)
  app and publish them as a site on [GitHub pages](https://pages.github.com/).
 
@@ -19,12 +23,12 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
 ## Generate artifacts
 
 1. In IntelliJ IDEA, a **Gradle build scripts found** notification appears. Click **Load**.
-2. Open the **Gradle** tool window: **View** | **Tool Windows** | **Gradle**.
-3. In the **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
+2. Open the **Gradle** tool window by selecting **View** | **Tool Windows** | **Gradle**.
+3. In **compose-example** | **Tasks** | **kotlin browser**, select and run the **wasmJsBrowserDistribution** task.
 
    ![Run the Gradle task](wasm-gradle-task-window-compose.png){width=650}
 
-   Alternatively, you can run the following command in Terminal from the `compose-example` directory:
+   Alternatively, you can run the following command in the terminal from the `compose-example` directory:
 
    ```bash
    ./gradlew wasmJsBrowserDistribution
@@ -36,7 +40,7 @@ demonstrates how to generate artifacts for a [Compose Multiplatform](https://www
 
 ## Publish on GitHub pages
 
-1. Copy all the contents in your `productionExecutable` directory into the repository that you want to create a site from.
+1. Copy all the contents in your `productionExecutable` directory into the repository where you want to create a site.
 2. Follow GitHub's instructions for [creating your site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
 
   > It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub.
