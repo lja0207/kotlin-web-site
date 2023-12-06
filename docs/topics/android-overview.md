@@ -1,17 +1,17 @@
-[//]: # (title: Kotlin for Android)
+[/]: # (제목: 안드로이드용 코틀린)
 
-Android mobile development has been [Kotlin-first](https://developer.android.com/kotlin/first) since Google I/O in 2019.
+안드로이드 모바일 개발은 [코틀린 퍼스트](https://developer.android.com/kotlin/first) 2019년 구글 I/O 이후.
 
-Over 50% of professional Android developers use Kotlin as their primary language, while only 30% use Java as their
-main language. 70% of developers whose primary language is Kotlin say that Kotlin makes them more productive.
+전문 안드로이드 개발자의 50% 이상이 코틀린을 모국어로 사용하는 반면 30%만이 자바를 모국어로 사용한다
+주요 언어. 코틀린이 1차 언어를 가진 개발자의 70%는 코틀린이 더 생산적으로 만든다고 말한다.
 
-Using Kotlin for Android development, you can benefit from:
+안드로이드 개발을 위해 코틀린을 사용하면 다음과 같은 혜택을 받을 수 있다.
 
-* **Less code combined with greater readability**. Spend less time writing your code and working to understand the code
-  of others.
-* **Fewer common errors**. Apps built with Kotlin are 20% less likely to crash based
-  on [Google's internal data](https://medium.com/androiddevelopers/fewer-crashes-and-more-stability-with-kotlin-b606c6a6ac04).
-* **Kotlin support in Jetpack libraries**. [Jetpack Compose](https://developer.android.com/jetpack/compose) is Android's
+* **더 큰 가독성과 결합된 코드가 적습니다.**. 코드 작성 및 코드 이해 작업 시간을 줄입니다.
+ 다른 사람들 중 말이죠. 
+* **공통 오류가 더 적습니다.**. Kotlin으로 구축된 앱은 20% 덜 충돌할 가능성이 있습니다
+ 온 [구글 내부 데이터](https://medium.com/androiddevelopers/fewer-crashes-and-more-stability-with-kotlin-b606c6a6ac04).
+* **제트팩 도서관의 코틀린 지원**.  [제트팩조작](https://developer.android.com/jetpack/compose) 안드로이드입니다.
   recommended modern toolkit for building native UI in Kotlin.
   [KTX extensions](https://developer.android.com/kotlin/ktx) add Kotlin language features, like coroutines,
   extension functions, lambdas, and named parameters to existing Android libraries.
